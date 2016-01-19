@@ -38,6 +38,6 @@ gem 'jquery-rails'
 # gem 'debugger'
 gem 'heroku'
 
-group :production do
-  gem 'activerecord-sqlite3-adapter'
-end
+# group :production do
+#   gem 'activerecord-sqlite3-adapter'
+# end
