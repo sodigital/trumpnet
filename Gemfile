@@ -37,7 +37,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 gem 'heroku'
+gem 'slim'
 
-# group :production do
-#   gem 'activerecord-sqlite3-adapter'
-# end
+group :production do
+  # gem 'activerecord-sqlite3-adapter'
+end
