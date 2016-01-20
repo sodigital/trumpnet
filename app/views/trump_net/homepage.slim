@@ -14,7 +14,10 @@
       button.btn.yes Yes
       button.btn.no No
 
-  iframe#your-site.padd-da-top border="0" frameborder="0" height="100%" noborder="noborder" onload="this.width=screen.width;this.height=screen.height;" padding="0" spacing="0" src="#{params[:your_site]}" width="100%" 
+  - url = params[:your_site].gsub("http://","").gsub("https://","")
+
+
+  iframe#your-site.padd-da-top border="0" frameborder="0" height="100%" noborder="noborder" onload="this.width=screen.width;this.height=screen.height;" padding="0" spacing="0" src="//#{url}" width="100%" 
   .append-youtube
   .tump-non-muslim-badge
     marquee direction="right"  Trump aprroved, non muslim user. This website is huge.
@@ -25,6 +28,6 @@
         = render "logo_base_64"
     #url-input-wrapper style="max-width:300px;margin: 0 auto; margin-top: 60px;"
       form action="/" 
-        input type="text" name="your_site" placeholder="Your url goes here"
-        input.btn type="submit"  
+        input.your-input-url type="text" name="your_site" placeholder="Your url goes here"
+        input.btn.blue-bg  type="submit"  
  

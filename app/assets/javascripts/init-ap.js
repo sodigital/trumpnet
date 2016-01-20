@@ -12,7 +12,6 @@ $(function(){
     $("#your-site").removeClass('padd-da-top')
   }
 
-
   var $iframe      = $("#your-site"),
       $wrapper     = $("#trump-warning-wrapper"),
       $placeholder = $(".append-youtube"),
@@ -28,16 +27,17 @@ $(function(){
      $hiddenUIs.removeClass("my-hidden")
   });//load
 
-$( "#trump-warning-wrapper .yes" ).click(function() {
-  $placeholder.append(funnyCode)
-  removeIframe()
-  hideWrapper()
-});
+  $( "#trump-warning-wrapper .yes" ).click(function() {
+    $placeholder.append(funnyCode)
+    removeIframe()
+    hideWrapper()
+  });
 
-$( "#trump-warning-wrapper .no" ).click(function() {
-  hideWrapper()
-  removeTopPadding()
-  $(".tump-non-muslim-badge").addClass("onscreen")
-});
+  $( "#trump-warning-wrapper .no" ).click(function() {
+    hideWrapper()
+    removeTopPadding()
+    $(".tump-non-muslim-badge").addClass("onscreen")
+  });
 
+  $(".your-input-url").focus()
 });//ready
