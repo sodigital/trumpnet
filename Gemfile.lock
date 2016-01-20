@@ -71,6 +71,7 @@ GEM
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
     netrc (0.10.3)
+    pg (0.18.4)
     polyglot (0.3.5)
     rack (1.4.7)
     rack-cache (1.5.1)
@@ -133,6 +134,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   heroku
   jquery-rails
+  pg
   rails (= 3.2.19)
   sass-rails (~> 3.2.3)
   slim
