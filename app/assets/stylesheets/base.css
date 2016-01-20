@@ -1,3 +1,10 @@
+.trans {
+    -webkit-transition: all 0.250s ease-in-out;
+  -moz-transition: all 0.250s ease-in-out;
+  -o-transition: all 0.250s ease-in-out;
+  transition: all 0.250s ease-in-out;
+}
+
 #overlay {
   height: 85%;
   width: 85%;
@@ -25,6 +32,10 @@
   background: rgba(130,4,8,.8);
   height: 100%;
   padding-top:2%;
+  -webkit-transition: all 0.250s ease-in-out;
+  -moz-transition: all 0.250s ease-in-out;
+  -o-transition: all 0.250s ease-in-out;
+  transition: all 0.250s ease-in-out;
 }
 
 #trump-warning-wrapper  .nav-buffer {
@@ -62,7 +73,10 @@ button.btn.no {
   height: 50px;
   font-size: 1.2em;
   line-height: 3.3em;
-  transition:all 0.3s ease;
+  -webkit-transition: all 0.250s ease-in-out;
+  -moz-transition: all 0.250s ease-in-out;
+  -o-transition: all 0.250s ease-in-out;
+  transition: all 0.250s ease-in-out;
 }
 .tump-non-muslim-badge.onscreen{
   bottom: 0;
@@ -72,3 +86,15 @@ button.btn.no {
   /*border: 2px solid #9e9e9e;*/
   padding:5px;
 }
+
+.bookmarklet {
+  position: absolute;
+  float: right;
+  right: 20px;
+  top: 22px;
+  z-index: 99999999;
+  width: 290px;
+  text-align: center;
+}
+
+.bookmarklet span,.bookmarklet  {color: white !important;}

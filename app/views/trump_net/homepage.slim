@@ -1,3 +1,7 @@
+span.bookmarklet
+  label Drag  the bookmarklet to your bookmarks, click it from any page to enter TrumpNet
+  a href="javascript:void(location.href='http://trump.sodigit.al/?your_site=' + encodeURIComponent(location.href));" Bookmarklet
+
 -if params[:your_site]
   #trump-warning-wrapper.content.center-me onload="this.width=screen.width;this.height=screen.height;" 
     .logo-wrapper
@@ -6,16 +10,15 @@
 
 
     span.nav-buffer &nbsp;
-    .hide-after-load style="font-size:3em;" 
+    .hide-after-load style="" 
       i.fa.fa-cog.fa-spin
       | Loading your site into TrumpNet
-    span.my-hidden
+    span.my-hidden.trans
       h3 Are you muslim?
       button.btn.yes Yes
       button.btn.no No
 
   - url = params[:your_site].gsub("http://","").gsub("https://","")
-
 
   iframe#your-site.padd-da-top border="0" frameborder="0" height="100%" noborder="noborder" onload="this.width=screen.width;this.height=screen.height;" padding="0" spacing="0" src="//#{url}" width="100%" 
   .append-youtube
@@ -24,11 +27,11 @@
 -else 
   #trump-warning-wrapper.content.center-me onload="this.width=screen.width;this.height=screen.height;" 
     .logo-wrapper
-      a href="/trumpnet" 
+      a href="/" 
         = render "logo_base_64"
-    #url-input-wrapper style="max-width:300px;margin: 0 auto; margin-top: 60px;"
+    #url-input-wrapper style="max-width:340px;margin: 0 auto; margin-top: 60px;"
       form action="/" 
-        label
+        label style="color:white" Put any url below to See the webpage from Trump's eyes.
         input.your-input-url type="text" name="your_site" placeholder="Your url goes here"
         input.btn.blue-bg  type="submit"  
  
