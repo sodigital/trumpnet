@@ -18,7 +18,7 @@ $(function(){
       $hiddenUIs   = $(".my-hidden"),
       $hideAfter   = $(".hide-after-load"),
       youtubeURL   = "https://www.youtube.com/watch?v=CyIEfG-WbRk",
-      funnyCode    = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/CyIEfG-WbRk?autoplay=1" frameborder="0" allowfullscreen  onload="this.width=screen.width;this.height=screen.height;"></iframe>'
+      funnyCode    = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/FHTkIwdL8Uk?autoplay=1" frameborder="0" allowfullscreen  onload="this.width=screen.width;this.height=screen.height;"></iframe>'
 
   
 
@@ -31,6 +31,7 @@ $(function(){
     $placeholder.append(funnyCode)
     removeIframe()
     hideWrapper()
+    $(".bookmarklet").hide()
   });
 
   $( "#trump-warning-wrapper .no" ).click(function() {

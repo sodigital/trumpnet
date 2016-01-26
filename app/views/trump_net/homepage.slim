@@ -1,6 +1,6 @@
 span.bookmarklet
-  label Drag  the bookmarklet to your bookmarks, click it from any page to enter TrumpNet
-  a href="javascript:void(location.href='http://trump.sodigit.al/?your_site=' + encodeURIComponent(location.href));" Bookmarklet
+  label Drag  the bookmarklet to your bookmarks, click it from any page to enter TrumpNet  
+  a href="javascript:void(location.href='http://trump.sodigit.al/?your_site=' + encodeURIComponent(location.href));"  Bookmarklet
 
 -if params[:your_site]
   #trump-warning-wrapper.content.center-me onload="this.width=screen.width;this.height=screen.height;" 
@@ -14,7 +14,8 @@ span.bookmarklet
       i.fa.fa-cog.fa-spin
       | Loading your site into TrumpNet
     span.my-hidden.trans
-      h3 Are you muslim?
+      h3 Now hold on a second... <br> Are you muslim?
+      span If you can't see your site, they prob. block iframes which is a good thing. <br><br>
       button.btn.yes Yes
       button.btn.no No
 
@@ -23,7 +24,7 @@ span.bookmarklet
   iframe#your-site.padd-da-top border="0" frameborder="0" height="100%" noborder="noborder" onload="this.width=screen.width;this.height=screen.height;" padding="0" spacing="0" src="//#{url}" width="100%" 
   .append-youtube
   .tump-non-muslim-badge
-    marquee direction="right"  Trump aprroved, non muslim user. This website is huge.
+    marquee direction="right"  This website is trumpnet aprroved, non muslim user. This website is huge.
 -else 
   #trump-warning-wrapper.content.center-me onload="this.width=screen.width;this.height=screen.height;" 
     .logo-wrapper
@@ -31,7 +32,5 @@ span.bookmarklet
         = render "logo_base_64"
     #url-input-wrapper style="max-width:340px;margin: 0 auto; margin-top: 60px;"
       form action="/" 
-        label style="color:white" Put any url below to See the webpage from Trump's eyes.
-        input.your-input-url type="text" name="your_site" placeholder="Your url goes here"
-        input.btn.blue-bg  type="submit"  
- 
+        input.your-input-url type="text" name="your_site" placeholder="Enter a url here to see it through trumpnet"
+        input.btn.yes  type="submit"  
